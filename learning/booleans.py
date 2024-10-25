@@ -1,3 +1,61 @@
+# Video Notes
+
+#comparisons:
+#Equal:     ==
+#Not Equal:  !=
+#Greater Than:   >
+#Less Than:      <
+#Greater or Equal:    >=
+#Less or Equal:       <=
+#Object Identity:     is
+
+language = 'Java'
+
+if language == 'Python':
+    print('Language is Python')
+elif language == 'Java':
+    print('Language is Java')
+elif language == 'JavaScript':
+    print('Language is JavaScript')
+else:
+    print('No match')
+
+#and -will follow what you place your object on (True/False)
+#or -will follow then True statments
+#not -Will make it the opposite of what it is (if not false = True)
+    
+user = 'Admin'
+logged_in = False
+
+if not logged_in:
+    print('Please Log In')
+else:
+    print('Welcome')
+
+# is - coems out as false because they are not the same thing. They have the same values but are not the same object in memory
+# id - different spots in memory
+# if you make the values equivalents then they are the same
+a = [1, 2, 3]
+b = a
+print(id(a))
+print(id(b))
+print(a is b) #= print(id(a) == id(b))
+
+#False Values:
+    #False -makes it false
+    #None - chanhe conditional to none and it will be false
+    #Zero of any numeric type =0 is a number
+    #Any empty sequence. For example, '', (), []. - noting there will be evaluated as false
+    #Any empty mapping. For example, {}. -empty dictionary will pass as false
+
+condition = 'Test'
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
+
+
 
 ############################################################################
 # Boolean expressions are statements that can be either True or False. In Python, the boolean data type is represented by the built-in data type bool.
